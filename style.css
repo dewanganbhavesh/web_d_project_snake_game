@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    background: url(bg.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+#board{
+    background: linear-gradient(rgb(22 230 143), rgb(112 244 6));
+    border: 2px solid blue;
+    height: 96vh;
+    width: 96vh;
+    position: absolute;
+    top: 2vh;
+    left: 26vw;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 60px;
+    right: 12vw;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 128px;
+    right: 12vw;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+.buttons{
+    position: absolute;
+    top: 32vh;
+    left: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 1vh 1vw;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 2vh 0;
+}
+
+#slow{
+    background-color: blue;
+}
+#medium{
+    background-color: green;
+}
+#fast{
+    background-color: red;
+}
+
+#difficulty{
+    position: absolute;
+    top: 128px;
+    left: 8vw;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
